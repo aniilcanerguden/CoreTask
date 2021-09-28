@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="993bda734b5b4ae488a49e40d9ef9c12" Name="Diagram1">
+        <EntityTypeShape EntityType="DbCoreTaskModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCoreTaskModel.Abouts" Width="1.5" PointX="2.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCoreTaskModel.Categories" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCoreTaskModel.Contacts" Width="1.5" PointX="4.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCoreTaskModel.Contents" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCoreTaskModel.Headings" Width="1.5" PointX="6" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCoreTaskModel.sysdiagrams" Width="1.5" PointX="6.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCoreTaskModel.Writers" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="DbCoreTaskModel.FK_dbo_Headings_dbo_Categories_CategoryID" ManuallyRouted="false" />
+        <AssociationConnector Association="DbCoreTaskModel.FK_dbo_Contents_dbo_Headings_HeadingID" ManuallyRouted="false" />
+        <AssociationConnector Association="DbCoreTaskModel.FK_dbo_Contents_dbo_Writers_WriterID" ManuallyRouted="false" />
+        <AssociationConnector Association="DbCoreTaskModel.FK_dbo_Headings_dbo_Writers_WriterID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

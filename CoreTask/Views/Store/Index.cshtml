@@ -1,0 +1,36 @@
+﻿@model IEnumerable<CoreTask.Models.Contents>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ContentValue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContentTime)
+        </th>
+   
+        
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContentValue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContentTime)
+        </td>
+  
+    </tr>
+}
+
+</table>
